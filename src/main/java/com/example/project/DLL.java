@@ -78,11 +78,7 @@ public class DLL<T> {
 			current = current.next;
 		}
 			
-		if(e1Node == null){//e1 not found
-			current = temp;
-			return;
-		}
-		if(current == null) { //e2 not found
+		if(e1Node == null || current == null){//e1 or e2 not found
 			current = temp;
 			return;
 		}
